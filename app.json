@@ -2,6 +2,7 @@
   "expo": {
     "name": "UAS-PAWM-18222027-18222059",
     "slug": "UAS-PAWM-18222027-18222059",
+    "owner": "uas-pawm",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +16,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.daviddewanto.UASPAWM1822202718222059"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "063163b4-3d45-4c48-bea8-a14e68f917e5"
+      }
     }
   }
 }
