@@ -4,6 +4,22 @@ import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 const Index = () => {
   return (
     <View style={styles.container}>
+      {/* Header */}
+      <View style={styles.header}>
+        <View style={styles.logoContainer}>
+          {/* Logo */}
+          <Image source={require('../assets/images/icon.png')} style={styles.logo} />
+          <Text style={styles.logoText}>IELTS9</Text>
+        </View>
+
+        {/* Navigation Links */}
+        <View style={styles.navLinks}>
+          <TouchableOpacity>
+            <Text style={styles.navText}>Login</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
       {/* Main Content Section */}
       <View style={styles.hero}>
         <View style={styles.content}>
@@ -41,6 +57,42 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 
+  // Header Styles
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: '#fff',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+  },
+  logoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  logo: {
+    width: 30,
+    height: 30,
+    marginRight: 10,
+  },
+  logoText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#63ce87',
+  },
+  navLinks: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  navText: {
+    marginLeft: 20,
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#333',
+  },
+
   // Hero Section Styles
   hero: {
     padding: 20,
@@ -57,16 +109,16 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   heroTitle: {
-    fontSize: 46,
+    fontSize: 40,
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 20,
     fontFamily: 'Lexend',
   },
   heroDescription: {
-    fontSize: 20,
+    fontSize: 18,
     color: '#666',
-    marginBottom: 8,
+    marginBottom: 20,
     fontFamily: 'Lexend',
   },
   heroImage: {
@@ -74,7 +126,7 @@ const styles = StyleSheet.create({
     height: 300,
     objectFit: 'cover',
     borderRadius: 10,
-    marginBottom: 35,
+    marginBottom: 10,
   },
 
   // Button Section Styles
