@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
 import LottieView from 'lottie-react-native';
-import * as SplashScreen from 'expo-splash-screen';
 
 export default function CustomSplash() {
   const animation = React.useRef(null);
   const windowDimensions = Dimensions.get('window');
-
-  useEffect(() => {
-    SplashScreen.preventAutoHideAsync();
-  }, []);
 
   return (
     <View style={styles.container}>
@@ -23,9 +18,6 @@ export default function CustomSplash() {
         autoPlay
         loop={false}
         resizeMode="cover"
-        onAnimationFinish={() => {
-          SplashScreen.hideAsync();
-        }}
       />
     </View>
   );
