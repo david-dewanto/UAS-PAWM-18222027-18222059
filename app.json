@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "UAS-PAWM-18222027-18222059",
+    "name": "IELTS9",
     "slug": "UAS-PAWM-18222027-18222059",
     "owner": "uas-pawm",
     "version": "1.0.0",
@@ -12,32 +12,26 @@
     "ios": {
       "supportsTablet": true
     },
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#000000",
+      "barStyle": "light-content",
+      "translucent": true
+    },
+    "plugins": [
+      "expo-router"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFFFF"
       },
-      "package": "com.daviddewanto.UASPAWM1822202718222059"
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
+      "package": "com.daviddewanto.UASPAWM1822202718222059",
+      "softwareKeyboardLayoutMode": "pan"
     },
     "extra": {
       "router": {
